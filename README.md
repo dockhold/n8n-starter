@@ -5,7 +5,7 @@ Run your **own** [n8n](https://n8n.io) automation instance on
 and credentials persist. This template is the upstream n8n image plus a small
 entrypoint that configures it for Dockhold's port, database, and HTTPS edge.
 
-[![Deploy to Dockhold](https://img.shields.io/badge/Deploy%20to-Dockhold-2563eb?style=for-the-badge)](https://app.dockhold.eu/new?repo=https://github.com/dockhold/n8n-starter)
+[![Deploy on Dockhold](https://dockhold.eu/button.svg)](https://app.dockhold.eu/new?repo=https://github.com/dockhold/n8n-starter&name=n8n-starter&ref=button)
 
 ## License — read this first
 
@@ -42,6 +42,15 @@ under its own license.
    - `WEBHOOK_URL` = `https://<that host>/`
    Then restart.
 5. Open the URL and create your owner account.
+
+## Deploy with your AI tool
+
+Install the Dockhold plugin or MCP server in your AI coding tool
+([setup guide](https://dockhold.eu/docs/recipes/deploy-from-your-ai-tool)), then
+say "put this online" in a folder with this template. The tool signs you in
+through the browser once and reports the URL when the app is live.
+
+Or from a terminal: `npx dockhold login`, then `npx dockhold deploy --db` (the `--db` adds the managed database this template needs).
 
 ## How it works
 
